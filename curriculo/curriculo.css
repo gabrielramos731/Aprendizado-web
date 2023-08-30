@@ -3,7 +3,7 @@ header{
 }
 
 body{
-  padding: 30px 8%;
+  padding: 30px 10%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
   margin: auto;
@@ -33,9 +33,31 @@ ul{
   list-style: none;
 }
 
-ul li::before{
+.qualif li::before{
   font-weight: bold;
   font-size: large;
   content: "\2022";
   color: #1667c4;
+}
+
+.link-menu{
+  text-align: right;
+}
+
+.link-menu li{
+  list-style-type: none;
+  display: inline;
+}
+
+.link-menu a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  background-color: #1667c4;
+  color: white;
+}
+
+.link-menu a:hover{
+  background: #5f8fc5;
+  color:#000;
 }
