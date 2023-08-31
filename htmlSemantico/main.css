@@ -1,38 +1,47 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #cecdcb;
 }
 
 .sup-sec{
   padding-top: 1px;
-  height: 400px;
-  background-color: antiquewhite;
+  height: 350px;
 
   background-image: url(imagens/bg-3.jpg);
   background-attachment: fixed;
-  background-size: contain;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-.sup-sec header, div{
-  background-color: antiquewhite;
+.sup-sec header{
   text-align: center;
   margin: auto;
-  position: relative;
-  top: 50%;
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px #1d1c1a;
+}
+
+.sup-sec div{
+  width: fit-content;
+  margin: auto;
+  padding: 15px;
+  box-shadow: 0 2px;
+  color: rgb(255, 255, 255);
+  background-color: #0b0909aa;
 }
 
 .sup-sec ul{
   list-style-type: none;
-  padding-right: 20px;
-  padding-top: 8px;
+  padding: 10px 10% 0 0;
 }
 
 ul li{
-  /* background-color: aqua; */
   float: right;
   margin-left: 15px;
   padding: 10px;
   opacity: 60%;
-  background-color: rgb(97, 105, 102);
+  background-color: #616966;
   border: 1px solid white;
 }
 
@@ -46,8 +55,43 @@ nav a{
   color: white;
 }
 
-body{
-  /* background-color: aqua; */
-  padding: 0;
-  margin: 0;
+.sub-sec{
+  margin: 10px 30%;
+}
+
+.sub-sec article{
+  background-color: rgb(255, 255, 255);
+  padding: 1px 15px 10px 15px;
+  margin-bottom: 20px;
+}
+
+.sub-sec header{
+  padding: 0px 10px 5px 10px;
+  box-shadow: 0px 1px;
+  background-color: rgb(230, 231, 232);
+}
+
+.sub-sec p{
+  font-size: 19px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.sub-sec aside{
+  background-color: rgb(220, 219, 217);
+  width: max-content;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+footer{
+  height: 60px;
+  background-color: black;
+  opacity: 45%;
+}
+
+footer p{
+  text-align: center;
+  padding-top: 20px;
+  color: rgb(255, 255, 255);
 }
