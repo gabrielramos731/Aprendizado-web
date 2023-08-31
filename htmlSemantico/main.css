@@ -1,0 +1,53 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sup-sec{
+  padding-top: 1px;
+  height: 400px;
+  background-color: antiquewhite;
+
+  background-image: url(imagens/bg-3.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.sup-sec header, div{
+  background-color: antiquewhite;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: 50%;
+}
+
+.sup-sec ul{
+  list-style-type: none;
+  padding-right: 20px;
+  padding-top: 8px;
+}
+
+ul li{
+  /* background-color: aqua; */
+  float: right;
+  margin-left: 15px;
+  padding: 10px;
+  opacity: 60%;
+  background-color: rgb(97, 105, 102);
+  border: 1px solid white;
+}
+
+ul li:hover{
+  opacity: 50%;
+  background-color: rgb(15, 14, 13);
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+}
+
+body{
+  /* background-color: aqua; */
+  padding: 0;
+  margin: 0;
+}
