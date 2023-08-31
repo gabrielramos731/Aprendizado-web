@@ -1,32 +1,32 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  padding-bottom: 0;
   background-color: #cecdcb;
 }
 
 .sup-sec{
   padding-top: 1px;
-  height: 350px;
+  height: 500px;
 
   background-image: url(imagens/bg-3.jpg);
-  background-attachment: fixed;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
 }
 
 .sup-sec header{
   text-align: center;
-  margin: auto;
   font-size: 30px;
+  margin-top: 120px;
   color: white;
-  text-shadow: 1px 1px #1d1c1a;
+  text-shadow: 2px 2px 1px #1d1c1a;
 }
 
 .sup-sec div{
   width: fit-content;
-  margin: auto;
+  margin: 10px auto;
   padding: 15px;
-  box-shadow: 0 2px;
+  border-bottom: 3px solid;
   color: rgb(255, 255, 255);
   background-color: #0b0909aa;
 }
@@ -34,20 +34,18 @@ body{
 .sup-sec ul{
   list-style-type: none;
   padding: 10px 10% 0 0;
+  float: right;
 }
 
-ul li{
-  float: right;
-  margin-left: 15px;
+.sup-sec li{
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 12px;
   padding: 10px;
   opacity: 60%;
   background-color: #616966;
   border: 1px solid white;
-}
-
-ul li:hover{
-  opacity: 50%;
-  background-color: rgb(15, 14, 13);
 }
 
 nav a{
@@ -55,19 +53,25 @@ nav a{
   color: white;
 }
 
+ul li:hover{
+  opacity: 50%;
+  background-color: rgb(15, 14, 13);
+}
+
 .sub-sec{
-  margin: 10px 30%;
+  margin: 15px 30%;
 }
 
 .sub-sec article{
-  background-color: rgb(255, 255, 255);
-  padding: 1px 15px 10px 15px;
+  padding: 15px;
   margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
 }
 
-.sub-sec header{
-  padding: 0px 10px 5px 10px;
-  box-shadow: 0px 1px;
+article h2{
+  margin-top: 0;
+  padding: 5px;
+  border-bottom: 2px solid black;
   background-color: rgb(230, 231, 232);
 }
 
@@ -77,21 +81,20 @@ nav a{
   text-align: justify;
 }
 
-.sub-sec aside{
-  background-color: rgb(220, 219, 217);
-  width: max-content;
+.btn{
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  border-radius: 6px;
   padding: 10px;
-  margin-bottom: 5px;
+  background-color: rgb(220, 219, 217);
 }
 
 footer{
-  height: 60px;
-  background-color: black;
-  opacity: 45%;
-}
-
-footer p{
   text-align: center;
-  padding-top: 20px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 2);
+  letter-spacing: 1px;
+  padding: 15px;
   color: rgb(255, 255, 255);
+  background-color: #6b6c68;
 }
