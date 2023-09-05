@@ -1,67 +1,54 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
-  background-color: aquamarine;
+  background-color: rgb(45, 194, 194);
 }
 
-main{
+.titulo{
+  text-align: center;
   margin-top: 150px;
 }
 
-main h1{
-  text-align: center;
-}
-
-.contatos{
-  width: 500px;
-  height: 550px;
-  overflow: auto;
+.container{
+  width: fit-content;
   margin: auto;
+  overflow: auto;
   border-radius: 10px;
+  height: 370px;
+  width: 450px;
   background-color: azure;
 }
 
-.contatos div{
-  height: 130px;
-  padding: 1px;
-  position: relative;
-  border-bottom: 1px solid rgb(204, 202, 202);
+.container .individuo{
+  height: 100px;
+  padding: 1px 0 0 5px;
+  border-bottom: 1px solid rgb(211, 211, 211);
 }
 
-.contatos .pic{
-  position: absolute;
-  top: 0; bottom: 0;
-  left: 8px;
-  margin: auto;
-  width: 80px;
+.individuo:hover{
+  background-color: rgb(228, 226, 226);
+}
+
+.pic{
+  float: left;
+  padding-top: 5px;
   border-radius: 100px;
-  border: 2px solid rgb(100, 240, 40);
+  width: 80px;
 }
 
-
-.contatos p{
-  width: fit-content;
-}
-
-.contatos .nome{
-  font-size: 22px;
-  letter-spacing: 1px;
+.nome{
+  display: flex;
   font-weight: bold;
-  margin: 30px 0 0 100px;
+  margin: 20px 0 5px 8px;
+  padding-left: 8px;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
-.contatos .email{
-  font-size: 17px;
-  margin: 10px 0 5px 100px;
-}
-
-.contatos div:hover{
-
-  background-color: rgb(211, 219, 226);
-}
-
-.icon .edit, .delete{
-  float: right;
-  width: 15px;
-  background-color: aqua;
+.email-icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  padding-left: 8px;
 }
 
