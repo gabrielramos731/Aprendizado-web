@@ -21,8 +21,7 @@ body{
 }
 
 .main-container{
-  /* width: 60%; */
-  max-width: 700px;
+  max-width: 720px;
 }
 
 .list{
@@ -32,23 +31,82 @@ body{
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 5px;
+  gap: 12px;
 }
 
 .list-item{
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 230px;
-  background-color: azure;
-
+  height: 270px;
+  align-items: center;
+  justify-content: end;
+  box-shadow: 2px 2px 7px black;
+  
   background-image: url(../imagens/thumb05.jpg);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 230px 50%;
-  
+  background-color: azure;
+}
+
+.pic{
+  position: absolute;
+  height: 70px;
+  top: 0; bottom: 0;
+  margin: auto;
+  padding: 0;
+}
+
+.pic img{
+  border-radius: 100px;
+  width: 70px;
 }
 
 .dados{
-  width: 230px;
+  text-align: center;
   word-break: break-word;
+  width: 230px;
+}
+
+.nome{
+  font-weight: bold;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.email{
+  margin-top: 0;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  /* padding: 15px; */
+  padding: 8px 0;
+  background-color: rgb(201, 212, 212);
+}
+
+.change-layout{
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  background-color: rgb(140, 255, 197);
+}
+
+.change-layout a{
+  text-decoration: none;
+  margin: 0;
+}
+
+.change-layout p{
+  padding: 12px;
+  margin: 0;
+}
+
+.change-layout a:any-link{
+  color: black;
 }
