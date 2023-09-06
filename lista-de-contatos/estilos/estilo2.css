@@ -8,20 +8,13 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   margin: 0;
   
   background-image: linear-gradient(rgb(5, 196, 196), rgb(157, 202, 202));
 }
 
-.main-title{
-  text-align: center;
-}
-
 .main-container{
-  max-width: 720px;
+  width: 720px;
 }
 
 .list{
@@ -38,25 +31,24 @@ body{
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 230px;
-  height: 270px;
   align-items: center;
   justify-content: end;
+  width: 230px;
+  height: 270px;
+  border-radius: 10px;
   box-shadow: 2px 2px 7px black;
   
   background-image: url(../imagens/thumb05.jpg);
   background-repeat: no-repeat;
-  background-position: right top;
-  background-size: 230px 50%;
+  background-size: 100% 50%;
   background-color: azure;
 }
 
 .pic{
   position: absolute;
-  height: 70px;
+  height: fit-content;
   top: 0; bottom: 0;
   margin: auto;
-  padding: 0;
 }
 
 .pic img{
@@ -67,7 +59,6 @@ body{
 .dados{
   text-align: center;
   word-break: break-word;
-  width: 230px;
 }
 
 .nome{
@@ -84,25 +75,24 @@ body{
   display: flex;
   justify-content: space-around;
   width: 100%;
-  /* padding: 15px; */
   padding: 8px 0;
+  border-radius: 0 0 10px 10px;
   background-color: rgb(201, 212, 212);
 }
 
 .change-layout{
   margin-top: 10px;
-  font-size: 16px;
   border-radius: 10px;
-  letter-spacing: 1px;
   background-color: rgb(140, 255, 197);
 }
 
 .change-layout a{
   text-decoration: none;
-  margin: 0;
 }
 
 .change-layout p{
+  font-size: 16px;
+  letter-spacing: 1px;
   padding: 12px;
   margin: 0;
 }
