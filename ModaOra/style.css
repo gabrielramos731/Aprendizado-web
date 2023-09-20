@@ -6,13 +6,13 @@ html{
   width: 100vw;
 }
 
-
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
   width: 95em;
   margin: 30px auto;
   padding-bottom: 5em;
+  color: #555;
 }
 
 .hero__cabecalho{
@@ -102,8 +102,8 @@ main{
   position: relative;
   text-align: left;
   background-image: url(imagens/bg_detalhe.png);
+  background-color: #003d52;
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: right bottom;
   height: 40rem;
   padding: 0;
@@ -122,7 +122,7 @@ main{
   width: 60%;
   font-size: 1.7em;
   margin-left: 3.765em;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .about__footer{
