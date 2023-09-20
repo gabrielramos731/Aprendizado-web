@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto&display=swap');
+
+
+html{
+  height: 100vh;
+  width: 100vw;
+}
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  width: 95em;
+  margin: 30px auto;
+  padding-bottom: 5em;
+}
+
+.hero__cabecalho{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #162028;
+}
+
+.hero__title{
+  font-family: 'Italiana', sans-serif;  
+  text-transform: capitalize;
+  font-weight: 100;
+  margin: .5rem 0 .5rem 7rem;
+  font-size: 2.3rem;
+}
+
+.hero__nav ul{
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  padding-right: 1rem;
+  letter-spacing: .3rem;
+  font-size: .85rem;
+  gap: 2.3rem;
+}
+
+.hero__nav a{
+  text-decoration: none;
+  color: #2b5373;
+}
+
+.hero__cta:hover{
+  color: white;
+}
+
+.hero__img{
+  width: 100%;
+}
+
+main{
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.pricipal{
+  margin: auto;
+  width: 80%;
+}
+
+.pricipal__title{
+  font-family: 'Italiana', sans-serif;
+  font-size: 2.3rem;
+}
+
+.pricipal__text{
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.pricipal__mostra{
+  margin: 4.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.principal__item{
+  display: flex;
+  flex-direction: column;
+  width: 23em;
+}
+
+.item__nome{
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: .8rem;
+}
+
+.item__features{
+  margin: 5px 0;
+  font-size: .85rem;
+}
+
+.about{
+  position: relative;
+  text-align: left;
+  background-image: url(imagens/bg_detalhe.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom;
+  height: 40rem;
+  padding: 0;
+  color: white;
+}
+
+.about__title{
+  font-family: 'Italiana', sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 0 0 4rem 4rem;
+  padding-top: 6rem;
+}
+
+.about__text{
+  width: 60%;
+  font-size: 1.7em;
+  margin-left: 3.765em;
+  line-height: 1.5;
+}
+
+.about__footer{
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  padding: 1em 0;
+  width: 100%;
+  font-size: 1.2em;
+  color: #6f8597;
+  background-color: #0b171f;
+}
