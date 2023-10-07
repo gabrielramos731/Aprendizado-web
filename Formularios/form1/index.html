@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <form>
+            <fieldset class="fieldset">
+                <p class="title">Formulário de contato</p>
+
+                <label for="nome">Seu nome<br>
+                    <input class="input--fmt" type="text" name="name" id="nome" required>
+                </label>
+
+                <label for="email" required>E-mail<br>
+                    <input class="input--fmt" type="email" name="email" id="email">
+                </label>
+
+                <label for="assunto" required>Assunto<br>
+                    <input class="input--fmt" type="text" name="assunto" id="assunto">
+                </label>
+
+                <label for="msg">Mensagem<br>
+                    <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                </label>
+
+                <input class="btn" type="submit">
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
