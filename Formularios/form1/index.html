@@ -8,31 +8,29 @@
 </head>
 
 <body>
-    <main>
-        <form>
-            <fieldset class="fieldset">
-                <p class="title">Formulário de contato</p>
+    <form>
+        <fieldset class="fieldset">
+            <p class="title">Formulário de contato</p>
 
-                <label for="nome">Seu nome<br>
-                    <input class="input--fmt" type="text" name="name" id="nome" required>
-                </label>
+            <label for="nome">Seu nome<br>
+                <input type="text" name="name" id="nome" placeholder="Digite seu nome" autocomplete="off" required>
+            </label>
 
-                <label for="email" required>E-mail<br>
-                    <input class="input--fmt" type="email" name="email" id="email">
-                </label>
+            <label for="email" required>E-mail<br>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            </label>
 
-                <label for="assunto" required>Assunto<br>
-                    <input class="input--fmt" type="text" name="assunto" id="assunto">
-                </label>
+            <label for="assunto" required>Assunto<br>
+                <input type="text" name="assunto" id="assunto" autocomplete="off" required>
+            </label>
 
-                <label for="msg">Mensagem<br>
-                    <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-                </label>
+            <label for="msg">Mensagem<br>
+                <textarea name="msg" id="msg" rows="5" maxlength="500"></textarea>
+            </label>
 
-                <input class="btn" type="submit">
-            </fieldset>
-        </form>
-    </main>
+            <input class="btn" type="submit">
+        </fieldset>
+    </form>
 </body>
 
 </html>
