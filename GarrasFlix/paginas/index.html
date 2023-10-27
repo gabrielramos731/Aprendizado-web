@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Garras Flix</title>
+    <link rel="stylesheet" href="../../normalize.css_8.0.1_normalize.css">
+
+    <style>
+        .b{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 60px;
+            width: 250px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">
+            garras flix
+        </h1>
+    </header>
+    <main class="main_container">  <!--flex-->
+        <nav class="filtros">
+            <h2 class="filtros__title">Filtros</h2>
+            <form>
+                <details class="filtros__item a">
+                    <summary>Gênero</summary>
+                    <div class="b">
+                        <label for="acao">
+                            <input id="acao" class="filtros__item__gen" type="checkbox" value="acao">Ação
+                        </label>
+                        <label for="drama">
+                            <input id="drama" class="filtros__item__gen" type="checkbox" value="drama">Drama
+                        </label>
+                        <label for="comedia">
+                            <input id="comedia" class="filtros__item__gen" type="checkbox" value="comedia">Comédia
+                        </label>
+                        <label for="terror">
+                            <input id="terror" class="filtros__item__gen" type="checkbox" value="terror">Terror
+                        </label>
+                        <label for="ficcao">
+                            <input id="ficcao" class="filtros__item__gen" type="checkbox" value="ficcao">Ficção
+                        </label>
+                        <label for="documentario">
+                            <input id="documentario" class="filtros__item__gen" type="checkbox" value="documentario">Documentário
+                        </label>
+                    </div>
+                </details>
+
+                <details class="filtros__item">
+                    <summary>Duração</summary>
+                    <label for="min_price">De</label>
+                    <input class="filtros__item__duracao" type="number" id="min_duracao" value="min_duracao"><span>Minutos</span>
+                    <label for="min_price">Até</label>
+                    <input class="filtros__item__duracao" type="number" id="max_duracao" value="max_duracao"><span>Minutos</span>
+                </details>
+
+                <details class="filtros__item">
+                    <summary>Faixa-etária</summary>
+                    <span>Apartir de</span><br>
+                    <input class="filtros__item__faixa-et" type="radio" name="faixa-etaria">Livre
+                    <input class="filtros__item__faixa-et" type="radio" name="faixa-etaria">10 Anos
+                    <input class="filtros__item__faixa-et" type="radio" name="faixa-etaria">12 Anos
+                    <input class="filtros__item__faixa-et" type="radio" name="faixa-etaria">14 Anos
+                    <input class="filtros__item__faixa-et" type="radio" name="faixa-etaria">16 Anos
+                    <input class="filtros__item__faixa-et" type="radio" name="faixa-etaria">18 Anos
+                </details>
+                <button type="submit">Filtrar</button>
+            </form>
+        </nav>
+    </main>
+</body>
+
+</html>
