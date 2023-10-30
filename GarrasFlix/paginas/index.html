@@ -7,73 +7,116 @@
     <link rel="stylesheet" href="../../normalize.css_8.0.1_normalize.css">
 
     <style>
-        .b{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            height: 60px;
-            width: 250px;
-        }
+        
     </style>
 
 </head>
 
 <body>
     <header class="header">
-        <h1 class="header__title">
-            garras flix
-        </h1>
+        <h1 class="header__title">garras flix</h1>
     </header>
-    <main class="main_container">  <!--flex-->
-        <nav class="filtros">
-            <h2 class="filtros__title">Filtros</h2>
-            <form>
-                <details class="filtros__item a">
-                    <summary>Gênero</summary>
-                    <div class="b">
-                        <label for="acao">
-                            <input id="acao" class="filtros__item__gen" type="checkbox" value="acao">Ação
+    <div class="container">  <!--flex-->
+        <aside class="filters-container">  <!--flex-->
+            <h2 class="filters-container__title">Filtros</h2>
+            <nav class="filter">
+                <details class="filter__item">
+                    <summary class="filter__header">Gênero</summary>
+                    <div class="filter__content">  <!--flex-->
+                        <label class="filter__option" for="acao">
+                            <input id="acao" class="filter__item__gen" type="checkbox" value="acao">Ação
                         </label>
-                        <label for="drama">
-                            <input id="drama" class="filtros__item__gen" type="checkbox" value="drama">Drama
+                        <label class="filter__option" for="drama">
+                            <input id="drama" class="filter__item__gen" type="checkbox" value="drama">Drama
                         </label>
-                        <label for="comedia">
-                            <input id="comedia" class="filtros__item__gen" type="checkbox" value="comedia">Comédia
+                        <label class="filter__option" for="comedia">
+                            <input id="comedia" class="filter__item__gen" type="checkbox" value="comedia">Comédia
                         </label>
-                        <label for="terror">
-                            <input id="terror" class="filtros__item__gen" type="checkbox" value="terror">Terror
+                        <label class="filter__option" for="terror">
+                            <input id="terror" class="filter__item__gen" type="checkbox" value="terror">Terror
                         </label>
-                        <label for="ficcao">
-                            <input id="ficcao" class="filtros__item__gen" type="checkbox" value="ficcao">Ficção
+                        <label class="filter__option" for="ficcao">
+                            <input id="ficcao" class="filter__item__gen" type="checkbox" value="ficcao">Ficção
                         </label>
-                        <label for="documentario">
-                            <input id="documentario" class="filtros__item__gen" type="checkbox" value="documentario">Documentário
+                        <label class="filter__option" for="documentario">
+                            <input id="documentario" class="filter__item__gen" type="checkbox" value="documentario">Documentário
                         </label>
                     </div>
                 </details>
 
-                <details class="filtros__item">
-                    <summary>Duração</summary>
-                    <label for="min_price">De</label>
-                    <input class="filtros__item__duracao" type="number" id="min_duracao" value="min_duracao"><span>Minutos</span>
-                    <label for="min_price">Até</label>
-                    <input class="filtros__item__duracao" type="number" id="max_duracao" value="max_duracao"><span>Minutos</span>
+                <details class="filter__item">
+                    <summary class="filter__header">Duração</summary>
+                    <div class="filter__content">
+                        <label class="filter__option" for="min_duracao">De
+                            <input class="filter__item__duracao" type="number" id="min_duracao" value="min_duracao">
+                        </label>
+                        <span>Minutos</span>
+                        <label class="filter__option" for="max_duracao">Até
+                            <input class="filter__item__duracao" type="number" id="max_duracao" value="max_duracao" min="0">
+                        </label>
+                        <span>Minutos</span>
+                    </div>
                 </details>
 
-                <details class="filtros__item">
-                    <summary>Faixa-etária</summary>
-                    <span>Apartir de</span><br>
-                    <input class="filtros__item__faixa-et" type="radio" name="faixa-etaria">Livre
-                    <input class="filtros__item__faixa-et" type="radio" name="faixa-etaria">10 Anos
-                    <input class="filtros__item__faixa-et" type="radio" name="faixa-etaria">12 Anos
-                    <input class="filtros__item__faixa-et" type="radio" name="faixa-etaria">14 Anos
-                    <input class="filtros__item__faixa-et" type="radio" name="faixa-etaria">16 Anos
-                    <input class="filtros__item__faixa-et" type="radio" name="faixa-etaria">18 Anos
+                <details class="filter__item">
+                    <summary class="filter__header">Faixa-etária</summary>
+                    <div class="filter__content">
+                        <span>Apartir de</span><br>
+                        <label class="filter__option" for="livre">
+                            <input id="livre" class="filter__item__faixa-et" type="radio" name="faixa-etaria" checked>Livre
+                        </label>
+                        <label class="filter__option" for="10y">
+                            <input id="10y" class="filter__item__faixa-et" type="radio" name="faixa-etaria">10 Anos
+                        </label>
+                        <label class="filter__option" for="12y">
+                            <input id="12y" class="filter__item__faixa-et" type="radio" name="faixa-etaria">12 Anos
+                        </label>
+                        <label class="filter__option" for="14y">
+                            <input id="14y" class="filter__item__faixa-et" type="radio" name="faixa-etaria">14 Anos
+                        </label>
+                        <label class="filter__option" for="16y">
+                            <input id="16y" class="filter__item__faixa-et" type="radio" name="faixa-etaria">16 Anos
+                        </label>
+                        <label class="filter__option" for="18y">
+                            <input id="18y" class="filter__item__faixa-et" type="radio" name="faixa-etaria">18 Anos
+                        </label>
+                    </div>
                 </details>
                 <button type="submit">Filtrar</button>
-            </form>
-        </nav>
-    </main>
+            </nav>
+        </aside>
+        <main class="hero">  <!--flex-->
+            <h2 class="hero__title">catálogo</h2>
+            <label for="hero__search">Busque aqui por um filme
+                <input type="text" name="" id="hero__search">
+                <button class="hero__search__submit" type="submit">Pesquisar</button>
+            </label>
+            <section class="hero__movies">  <!--flex-->
+                <article class="movie">  <!--flex-->
+                    <img class="movie__img" src="../movie-cards/4819874.jpg" alt="" width="300px">
+                    <div class="movie__info">  <!--flex-->
+                        <h2 class="movie__info__title"></h2>
+                        <p class="movie__info__duracao">Duração x tempo</p>
+                        <div class="movie__info__sala">
+                            <p class="movie__room">Sala 1</p>
+                            <p class="movie__hour"></p>
+                        </div>
+                        <div class="movie__genres">  <!--flex-->
+                            <p class="genres__item">Drama</p>
+                            <p class="genres__item">Comédia</p>
+                        </div>
+                    </div>
+                    <div class="movie__extra">  <!--flex-->
+                        <p class="movie_faixa-et">12 Anos</p>
+                        <button type="submit">Comprar</button>
+                    </div>
+                </article>
+                
+                
+            </section>
+            <footer class="hero__footer"></footer>
+        </main>
+    </div>
 </body>
 
 </html>
