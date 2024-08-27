@@ -3,14 +3,16 @@ html{
 }
 
 body{
+    color: #fff;
     max-width: 1230px;
+    min-width: 620px;
     width: 75%;
     margin: auto;
+    font-size: 16px;
     background-color: #232830;
-    color: #fff;
-    font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 .banner nav{
     display: flex;
@@ -45,6 +47,68 @@ body{
 }
 
 .banner h1{
-    text-;
+    font-size: 44px;
+    font-weight: 100;
+    letter-spacing: 1px;
     color: #FF7575;
+    margin-bottom: 0;
+    font-style: italic;
 }
+
+.banner p{
+    margin-top: 0;
+}
+
+.courses{
+    width: 100%;
+    border-top: 1px solid #2c333d;
+}
+
+.courses ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.courses a{
+    font-style: italic;
+    width: fit-content;
+}
+
+.courses a:any-link{
+    color: #909090;
+    text-decoration: none;
+}
+
+.courses a:hover{
+    color: #2c333d;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 70px;
+}
+
+.hero article{
+    border-radius: 22px;
+    box-sizing: border-box;
+    padding: 24px;
+    width: 290px;
+    height: fit-content;
+    font-size: 14px;
+    color: #0F1217;
+    background-color: #fff;
+}
+
+.hero img{
+    width: 100%;
+}
+
