@@ -13,7 +13,6 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
 .banner nav{
     display: flex;
     justify-content: space-between;
@@ -60,7 +59,8 @@ body{
 }
 
 .courses{
-    width: 100%;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
     border-top: 1px solid #2c333d;
 }
 
@@ -112,3 +112,53 @@ body{
     width: 100%;
 }
 
+.pagination{
+    margin: 60px 0;
+}
+
+.pagination ul{
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+.pagination a{
+    padding: 3px;
+    text-decoration: none;
+    color: #909090;
+}
+
+.pagination--highlight{
+    color: #FF7575 !important;
+    border-top: 1px solid;
+}
+
+.pagination--active{
+    pointer-events: none;
+}
+
+.pagination a:hover{
+    text-decoration: underline 1px #909090;
+}
+
+.under-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    min-width: fit-content;
+    margin-left: calc(-50vw + 50%);
+    padding: 30px 0;
+    border-top: 1px solid #2c333d;
+}
+
+.under-footer a:any-link{
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #4699E0;
+    color: #fff;
+    margin-left: 5px;
+}
