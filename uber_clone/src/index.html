@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/output.css">
+    <title>Document</title>
 </head>
 
-<body>
+<body class="min-h-screen font-inter"> 
+
+    <div class="bg-black py-5">  <!--div bg-->
+        <header class="m-auto w-9/12 flex justify-between md:max-w-[1200px]">
+            <div class="flex justify-center gap-6 items-center">
+                <img src="../src/assets/uberlogo.png" alt=""  width=71px height="25px">
+                <a href="#" class="hidden md:inline-block md:text-white">
+                    Company</a>
+                <a href="#" class="hidden md:inline-block md:text-white">
+                    Safety</a>
+                <a href="#" class="hidden md:inline-block md:text-white">
+                    Help</a>
+            </div>
+            <div class="flex gap-4">
+                <a href="#" class="transition duration-200 text-white hover:bg-slate-800 px-5 py-2 rounded-[36px]">
+                    Login</a>
+                <a href="#" class="transition duration-200 bg-white hover:bg-slate-200 p-2 rounded-[36px] font-medium">
+                    Sign up</a>
+            </div>
+        </header>
+    </div>
+
+    <div class="md:py-20 md:pl-[12.5%] md:bg-[url('uber_clone\src\assets\bguber.png')]"> <!--div bg-->
+        <nav class="bg-slate-100  md:w-fit">  
+            <div class="m-auto flex px-2 gap-6 items-center justify-center">
+                <a href="#" class="flex-1 flex flex-col items-center max-w-32 py-6 text-center border-b-2 border-black">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.7778 17.3582H8.41068C7.97473 17.3582 7.62164 17.7113 7.62164 18.1473V27.6157C7.62164 28.0517 7.97473 28.4048 8.41068 28.4048H10.7778C11.2137 28.4048 11.5668 28.0517 11.5668 27.6157V18.1473C11.5668 17.7113 11.2137 17.3582 10.7778 17.3582ZM4.46548 22.0925H2.09837C1.66242 22.0925 1.30933 22.4456 1.30933 22.8815V27.6157C1.30933 28.0517 1.66242 28.4048 2.09837 28.4048H4.46548C4.90143 28.4048 5.25452 28.0517 5.25452 27.6157V22.8815C5.25452 22.4456 4.90143 22.0925 4.46548 22.0925ZM17.0901 12.624H14.723C14.287 12.624 13.934 12.9771 13.934 13.413V27.6157C13.934 28.0517 14.287 28.4048 14.723 28.4048H17.0901C17.5261 28.4048 17.8791 28.0517 17.8791 27.6157V13.413C17.8791 12.9771 17.5261 12.624 17.0901 12.624ZM23.4024 7.88975H21.0353C20.5994 7.88975 20.2463 8.24285 20.2463 8.67879V27.6157C20.2463 28.0517 20.5994 28.4048 21.0353 28.4048H23.4024C23.8384 28.4048 24.1915 28.0517 24.1915 27.6157V8.67879C24.1915 8.24285 23.8384 7.88975 23.4024 7.88975ZM29.7147 3.15552H27.3476C26.9117 3.15552 26.5586 3.50861 26.5586 3.94456V27.6157C26.5586 28.0517 26.9117 28.4048 27.3476 28.4048H29.7147C30.1507 28.4048 30.5038 28.0517 30.5038 27.6157V3.94456C30.5038 3.50861 30.1507 3.15552 29.7147 3.15552Z" fill="black"/>
+                    </svg>
+                    <p>Faça viagens ou entregas</p>
+                </a href="#">   
+
+                <a href="#" class="flex-1 flex flex-col items-center max-w-32 py-6 text-center">
+                    <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27.2451 13.9047L26.6147 12.3287L25.497 9.53415C24.5374 7.1355 22.2487 5.58594 19.665 5.58594H12.5425C9.95933 5.58594 7.67004 7.1355 6.71047 9.53415L5.59274 12.3287L4.96238 13.9047C3.60966 14.4189 2.64392 15.7178 2.64392 17.2511V19.9431C2.64392 20.8471 2.98939 21.6631 3.54124 22.2946V25.327C3.54124 26.318 4.34491 27.1217 5.33589 27.1217H7.13053C8.12151 27.1217 8.92517 26.318 8.92517 25.327V23.5324H23.2823V25.327C23.2823 26.318 24.086 27.1217 25.077 27.1217H26.8716C27.8626 27.1217 28.6662 26.318 28.6662 25.327V22.2946C29.2181 21.6637 29.5636 20.8477 29.5636 19.9431V17.2511C29.5636 15.7178 28.5978 14.4189 27.2451 13.9047ZM10.0429 10.8672C10.4517 9.84541 11.4416 9.17522 12.5425 9.17522H19.665C20.7659 9.17522 21.7557 9.84541 22.1646 10.8672L23.2823 13.6618H8.92517L10.0429 10.8672ZM7.13053 19.9319C6.05374 19.9319 5.33589 19.2162 5.33589 18.1428C5.33589 17.0694 6.05374 16.3538 7.13053 16.3538C8.20731 16.3538 9.82249 17.9639 9.82249 19.0373C9.82249 20.1108 8.20731 19.9319 7.13053 19.9319ZM25.077 19.9319C24.0002 19.9319 22.385 20.1108 22.385 19.0373C22.385 17.9639 24.0002 16.3538 25.077 16.3538C26.1537 16.3538 26.8716 17.0694 26.8716 18.1428C26.8716 19.2162 26.1537 19.9319 25.077 19.9319Z" fill="black"/>
+                    </svg>
+                    <p>Viajar</p>
+                </a href="#">
+                
+                <a href="#" class="flex-1 flex flex-col items-center max-w-32 py-6 text-center">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_141)">
+                        <path d="M28.3019 9.9294C28.3019 15.2029 24.0269 19.478 18.7533 19.478C18.1446 19.478 17.5495 19.4203 16.9724 19.3115L15.6696 20.7771C15.5475 20.9145 15.3976 21.0245 15.2298 21.0998C15.0621 21.1751 14.8803 21.2141 14.6964 21.2141H12.6769V23.3842C12.6769 24.1033 12.094 24.6863 11.3749 24.6863H9.20473V26.8564C9.20473 27.5756 8.62177 28.1585 7.90264 28.1585H1.82625C1.10712 28.1585 0.52417 27.5756 0.52417 26.8564V22.6215C0.52417 22.2761 0.661377 21.9449 0.905518 21.7007L9.68384 12.9224C9.37335 11.9809 9.20473 10.9749 9.20473 9.92935C9.20473 4.6558 13.4797 0.380792 18.7533 0.380737C24.0424 0.380683 28.3019 4.64023 28.3019 9.9294ZM18.7533 7.32518C18.7533 8.76344 19.9192 9.92935 21.3575 9.92935C22.7958 9.92935 23.9617 8.76344 23.9617 7.32518C23.9617 5.88692 22.7958 4.72101 21.3575 4.72101C19.9192 4.72101 18.7533 5.88692 18.7533 7.32518Z" fill="black"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1_141">
+                        <rect width="27.7778" height="27.7778" fill="white" transform="translate(0.523804 0.380859)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                    <p>Alugue seus carros</p>
+                </a href="#">
+            </div>
+            <section class="hidden md:block bg-white py-10 px-7">
+                <h1 class="text-5xl max-w-md pb-6"><strong>Assuma o comando e ganhe</strong></h1>
+                <p class="pb-6">Diriga na plataforma com a maior rede de usuários ativos.</p>
+                <button class="bg-black px-8 py-2 text-white rounded-md">Cadastre-se para dirigir</button>
+                <a href="#" class="pt-6 block underline underline-offset-4 decoration-slate-400">Saiba mais sobre como dirigir e fazer entregas</a>
+            </section>
+        </nav>
+    </div>
+
 </body>
 </html>
