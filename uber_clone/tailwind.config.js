@@ -5,6 +5,10 @@ module.exports = {
     extend: {
       fontFamily: {
         'inter': ['Inter']
+      },
+      backgroundImage: {
+        'uber': "url('/uber_clone/src/assets/bg-uber.png')",
+        'city': "url('/uber_clone/src/assets/bg-city.png')",
       }
     },
   },

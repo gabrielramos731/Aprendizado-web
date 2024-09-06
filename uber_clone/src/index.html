@@ -14,8 +14,9 @@
 
 <body class="min-h-screen font-inter"> 
 
+    <!-- HEADER -->
     <div class="bg-black py-5">  <!--div bg-->
-        <header class="m-auto w-9/12 flex justify-between md:max-w-[1200px]">
+        <header class="m-auto w-4/5 flex justify-between md:max-w-[1200px]">
             <div class="flex justify-center gap-6 items-center">
                 <img src="../src/assets/uberlogo.png" alt=""  width=71px height="25px">
                 <a href="#" class="hidden md:inline-block md:text-white">
@@ -34,8 +35,8 @@
         </header>
     </div>
 
-    <div class="md:py-20 md:pl-[12.5%] md:bg-[url('uber_clone\src\assets\bguber.png')]"> <!--div bg-->
-        <nav class="bg-slate-100  md:w-fit">  
+    <div class="md:py-20 md:pl-[12.5%] md:bg-uber md:bg-cover md:bg-no-repeat md:bg-left"> <!--div bg-->
+        <nav class="bg-slate-100 md:w-fit">  
             <div class="m-auto flex px-2 gap-6 items-center justify-center">
                 <a href="#" class="flex-1 flex flex-col items-center max-w-32 py-6 text-center border-b-2 border-black">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,14 +66,188 @@
                     <p>Alugue seus carros</p>
                 </a href="#">
             </div>
-            <section class="hidden md:block bg-white py-10 px-7">
-                <h1 class="text-5xl max-w-md pb-6"><strong>Assuma o comando e ganhe</strong></h1>
-                <p class="pb-6">Diriga na plataforma com a maior rede de usuários ativos.</p>
-                <button class="bg-black px-8 py-2 text-white rounded-md">Cadastre-se para dirigir</button>
-                <a href="#" class="pt-6 block underline underline-offset-4 decoration-slate-400">Saiba mais sobre como dirigir e fazer entregas</a>
-            </section>
+            
+            <div class="w-full m-auto bg-white">  <!--div bg-->
+                <section class="w-4/5 m-auto md:block py-10">
+                    <h1 class="text-3xl md:text-5xl pb-6"><strong>Assuma o comando e ganhe</strong></h1>
+                    <p class="pb-6">Diriga na plataforma com a maior rede de usuários ativos.</p>
+                    <button class="bg-black px-8 py-2 text-white rounded-md">
+                        Cadastre-se para dirigir</button>
+                    <a href="#" class="pt-6 block underline underline-offset-4 decoration-slate-400">
+                        Saiba mais sobre como dirigir e fazer entregas</a>
+                </section>
+            </div>
         </nav>
     </div>
+    <!-- FIM HEADER -->
 
+    <!-- CTA -->
+    <div class="bg-city py-7 bg-cover bg-right-bottom box-content">  <!--div bg-->
+        <section class="w-4/5 max-w-[1200px] m-auto">
+            <h1 class="text-2xl md:text-5xl font-bold pb-5 box-content md:max-w-[880px]">
+                A plataforma Uber que você conhece, reinventada para empresas</h1>
+            <p class="text-sm md:text-xl pb-6 md:max-w-[755px]">
+                Uma plataforma simples para empresas de todos os portes administrarem suas viagens e refeições globais e entregas locais.</p>
+            <button class="text-sm md:text-base py-2 px-8 bg-black text-white font-medium rounded-md">
+                Começar</button>
+        </section>
+    </div>
+    <!--FIM CTA-->
+
+    <!-- POST -->
+    <div class="pb-16 md:w-4/5 md:mx-auto">  <!-- div bg -->
+        <h3 class="pt-9 pb-5 text-lg font-bold md:text-4xl md:max-w-3xl">
+            Preocupados com a sua segurança, onde quer que você vá</h3>
+        <section class="md:flex md:gap-5">
+            <article class="px-2 md:px-0 flex flex-col gap-4 md:flex-1">
+                <img src="../src/assets/post1.png" alt="imagem de transito">
+                <p class="font-medium text-xl md:text-2xl">Sua segurança é a nossa prioridade</p>
+                <p class="pb-5 text-sm md:text-base">Com todos os recursos de segurança e todas as normas do nosso Código da Comunidade Uber, estamos comprometidos em ajudar a criar um ambiente seguro para nossos usuários.</p>
+            </article>
+            <article class="px-2 md:px-0 flex flex-col gap-4 md:flex-1">
+                <img src="../src/assets/post2.png" alt="imagem de motorista uber">
+                <p class="font-medium text-xl md:text-2xl">Colocamos mais de 10.000 cidades em movimento</p>
+                <p class="text-sm md:text-base">O app está disponível em milhares de cidades no mundo todo para que você possa solicitar uma viagem mesmo longe de casa.</p>
+            </article>
+        </section>
+    </div>
+    <!-- FIM POST -->
+
+    <!-- CTA -->
+    <section class="flex flex-col gap-7 px-4 pb-8 md:px-0 md:w-4/5 md:mx-auto md:flex-row">  
+        <article class="flex flex-col gap-5">
+            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_167)">
+                <path d="M5.4533 16.3597C7.45852 16.3597 9.08883 14.7293 9.08883 12.7241C9.08883 10.7189 7.45852 9.08859 5.4533 9.08859C3.44807 9.08859 1.81777 10.7189 1.81777 12.7241C1.81777 14.7293 3.44807 16.3597 5.4533 16.3597ZM30.902 16.3597C32.9072 16.3597 34.5375 14.7293 34.5375 12.7241C34.5375 10.7189 32.9072 9.08859 30.902 9.08859C28.8968 9.08859 27.2665 10.7189 27.2665 12.7241C27.2665 14.7293 28.8968 16.3597 30.902 16.3597ZM32.7198 18.1774H29.0842C28.0845 18.1774 27.1813 18.5807 26.5223 19.234C28.8116 20.4894 30.4362 22.7559 30.7884 25.4485H34.5375C35.543 25.4485 36.3553 24.6362 36.3553 23.6307V21.813C36.3553 19.8077 34.725 18.1774 32.7198 18.1774ZM18.1777 18.1774C21.6939 18.1774 24.5398 15.3315 24.5398 11.8152C24.5398 8.299 21.6939 5.45306 18.1777 5.45306C14.6614 5.45306 11.8155 8.299 11.8155 11.8152C11.8155 15.3315 14.6614 18.1774 18.1777 18.1774ZM22.5403 19.9952H22.0688C20.8873 20.5632 19.5751 20.9041 18.1777 20.9041C16.7802 20.9041 15.4737 20.5632 14.2865 19.9952H13.815C10.2022 19.9952 7.27106 22.9263 7.27106 26.5391V28.1751C7.27106 29.6805 8.49237 30.9018 9.99771 30.9018H26.3576C27.8629 30.9018 29.0842 29.6805 29.0842 28.1751V26.5391C29.0842 22.9263 26.1531 19.9952 22.5403 19.9952ZM9.83298 19.234C9.17404 18.5807 8.27083 18.1774 7.27106 18.1774H3.63553C1.63031 18.1774 0 19.8077 0 21.813V23.6307C0 24.6362 0.812314 25.4485 1.81777 25.4485H5.56123C5.9191 22.7559 7.54373 20.4894 9.83298 19.234Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_167">
+                <rect width="36.3553" height="36.3553" fill="white"/>
+                </clipPath>
+                </defs>
+            </svg>
+            <h3 class="text-xl">Quem somos</h3>
+            <p>Find out how we started, what drives us, and how we’re reimagining how the world moves.</p>
+            <a href="#" class="block underline underline-offset-4 decoration-slate-400">
+                Saiba mais sobre a Uber</a>
+        </article>
+        <article class="flex flex-col gap-5">
+            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_170)">
+                <path d="M28.8939 5.09169H23.2134C23.2134 2.58516 21.1755 0.547272 18.669 0.547272C16.1625 0.547272 14.1246 2.58516 14.1246 5.09169H8.44408C6.56241 5.09169 5.03577 6.61832 5.03577 8.5V33.4943C5.03577 35.3759 6.56241 36.9026 8.44408 36.9026H28.8939C30.7756 36.9026 32.3022 35.3759 32.3022 33.4943V8.5C32.3022 6.61832 30.7756 5.09169 28.8939 5.09169ZM11.8524 30.654C10.908 30.654 10.1482 29.8942 10.1482 28.9499C10.1482 28.0055 10.908 27.2457 11.8524 27.2457C12.7968 27.2457 13.5565 28.0055 13.5565 28.9499C13.5565 29.8942 12.7968 30.654 11.8524 30.654ZM11.8524 23.8374C10.908 23.8374 10.1482 23.0776 10.1482 22.1332C10.1482 21.1889 10.908 20.4291 11.8524 20.4291C12.7968 20.4291 13.5565 21.1889 13.5565 22.1332C13.5565 23.0776 12.7968 23.8374 11.8524 23.8374ZM11.8524 17.0208C10.908 17.0208 10.1482 16.261 10.1482 15.3166C10.1482 14.3722 10.908 13.6125 11.8524 13.6125C12.7968 13.6125 13.5565 14.3722 13.5565 15.3166C13.5565 16.261 12.7968 17.0208 11.8524 17.0208ZM18.669 3.38753C19.6134 3.38753 20.3732 4.1473 20.3732 5.09169C20.3732 6.03607 19.6134 6.79584 18.669 6.79584C17.7246 6.79584 16.9649 6.03607 16.9649 5.09169C16.9649 4.1473 17.7246 3.38753 18.669 3.38753ZM27.7578 29.5179C27.7578 29.8303 27.5022 30.086 27.1898 30.086H16.9649C16.6524 30.086 16.3968 29.8303 16.3968 29.5179V28.3818C16.3968 28.0694 16.6524 27.8138 16.9649 27.8138H27.1898C27.5022 27.8138 27.7578 28.0694 27.7578 28.3818V29.5179ZM27.7578 22.7013C27.7578 23.0137 27.5022 23.2693 27.1898 23.2693H16.9649C16.6524 23.2693 16.3968 23.0137 16.3968 22.7013V21.5652C16.3968 21.2528 16.6524 20.9971 16.9649 20.9971H27.1898C27.5022 20.9971 27.7578 21.2528 27.7578 21.5652V22.7013ZM27.7578 15.8847C27.7578 16.1971 27.5022 16.4527 27.1898 16.4527H16.9649C16.6524 16.4527 16.3968 16.1971 16.3968 15.8847V14.7486C16.3968 14.4361 16.6524 14.1805 16.9649 14.1805H27.1898C27.5022 14.1805 27.7578 14.4361 27.7578 14.7486V15.8847Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_170">
+                <rect width="36.3553" height="36.3553" fill="white" transform="translate(0.492188 0.546875)"/>
+                </clipPath>
+                </defs>
+            </svg>                
+            <h3 class="text-xl">Newsroom</h3>
+            <p>Confira as notícias mais recentes sobre lançamentos, iniciativas e parcerias.</p>
+            <a href="#" class="block underline underline-offset-4 decoration-slate-400">
+                Acesse o Newsroom</a>
+        </article>
+        <article class="flex flex-col gap-5">
+            <svg width="38" height="37" viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_177)">
+                <path d="M18.6816 11.9252L7.04472 21.5095V31.8537C7.04472 32.1216 7.15112 32.3784 7.34051 32.5678C7.52989 32.7572 7.78676 32.8636 8.05459 32.8636L15.1275 32.8453C15.3944 32.844 15.65 32.737 15.8383 32.5477C16.0266 32.3585 16.1323 32.1024 16.1323 31.8354V25.7945C16.1323 25.5267 16.2387 25.2698 16.4281 25.0804C16.6175 24.891 16.8743 24.7846 17.1422 24.7846H21.1816C21.4495 24.7846 21.7063 24.891 21.8957 25.0804C22.0851 25.2698 22.1915 25.5267 22.1915 25.7945V31.831C22.1911 31.9639 22.2169 32.0955 22.2675 32.2184C22.318 32.3413 22.3924 32.453 22.4862 32.5471C22.58 32.6412 22.6915 32.7159 22.8142 32.7669C22.9369 32.8178 23.0685 32.844 23.2014 32.844L30.2717 32.8636C30.5396 32.8636 30.7964 32.7572 30.9858 32.5678C31.1752 32.3784 31.2816 32.1216 31.2816 31.8537V21.5026L19.6473 11.9252C19.5105 11.815 19.3401 11.7548 19.1644 11.7548C18.9887 11.7548 18.8184 11.815 18.6816 11.9252ZM37.0631 18.4395L31.7865 14.0901V5.3478C31.7865 5.14692 31.7067 4.95427 31.5647 4.81223C31.4227 4.67019 31.23 4.59039 31.0291 4.59039H27.4946C27.2937 4.59039 27.1011 4.67019 26.959 4.81223C26.817 4.95427 26.7372 5.14692 26.7372 5.3478V9.93071L21.0863 5.28152C20.544 4.83527 19.8636 4.59129 19.1613 4.59129C18.459 4.59129 17.7785 4.83527 17.2362 5.28152L1.25943 18.4395C1.18274 18.5029 1.11928 18.5808 1.0727 18.6687C1.02611 18.7566 0.997308 18.8528 0.98793 18.9519C0.978552 19.051 0.988784 19.1509 1.01804 19.246C1.0473 19.3411 1.09501 19.4295 1.15844 19.5062L2.76792 21.4628C2.83119 21.5397 2.909 21.6034 2.99691 21.6502C3.08482 21.697 3.1811 21.7261 3.28024 21.7356C3.37938 21.7452 3.47943 21.7351 3.57466 21.7059C3.66989 21.6768 3.75844 21.6291 3.83523 21.5657L18.6816 9.33741C18.8184 9.22716 18.9887 9.16704 19.1644 9.16704C19.3401 9.16704 19.5105 9.22716 19.6473 9.33741L34.4942 21.5657C34.5709 21.6291 34.6593 21.6768 34.7544 21.7061C34.8495 21.7353 34.9494 21.7456 35.0485 21.7362C35.1476 21.7268 35.2438 21.698 35.3317 21.6514C35.4197 21.6048 35.4975 21.5414 35.5609 21.4647L37.1704 19.5081C37.2338 19.431 37.2813 19.3421 37.3102 19.2466C37.3391 19.1511 37.3489 19.0508 37.3389 18.9515C37.3289 18.8522 37.2994 18.7558 37.2521 18.668C37.2048 18.5801 37.1405 18.5025 37.0631 18.4395Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_177">
+                <rect width="36.3553" height="36.3553" fill="white" transform="translate(0.984375 0.546875)"/>
+                </clipPath>
+                </defs>
+            </svg>  
+            <h3 class="text-xl">Cidadania global</h3>
+            <p>Leia sobre nosso compromisso de gerar um impacto positivo nas cidades que atendemos.</p>
+            <a href="#" class="block underline underline-offset-4 decoration-slate-400">
+                See our partnerships</a>
+        </article>
+    </section>
+    <!-- FIM CTA -->
+
+    <!-- CTA BTN-->
+    <div class="bg-slate-200">  <!-- div bg-->
+        <section class="py-6 px-3 md:px-0 md:w-4/5 md:mx-auto md:py-14">
+            <h3 class="text-xl font-bold pb-4 md:text-5xl">É mais fácil pelo app</h3>
+            <div class="flex flex-col gap-5 md:flex-row md">
+                <button class="font-bold bg-white outline outline-slate-400 outline-1 py-5 px-3 flex justify-between items-center transition-transform duration-200 hover:scale-105 md:flex-1 md:gap-4">
+                    <svg 
+                        width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        class="hidden md:flex md:scale-90">
+                        <rect width="150" height="150" fill="url(#pattern0_1_95)"/>
+                        <defs>
+                        <pattern id="pattern0_1_95" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_1_95" transform="scale(0.00666667)"/>
+                        </pattern>
+                        <image id="image0_1_95" width="150" height="150" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                    </svg>
+                    <div>
+                        <p class="peer md:text-2xl">Baixe o app da Uber</p>
+                        <span class="hidden md:flex">Leia o código QR para baixar o app</span>
+                    </div>
+                    <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.668 3.75494L11.7323 2.6906C12.183 2.23993 12.9117 2.23993 13.3576 2.6906L22.6777 12.0059C23.1284 12.4566 23.1284 13.1853 22.6777 13.6312L13.3576 22.9514C12.9069 23.402 12.1782 23.402 11.7323 22.9514L10.668 21.887C10.2125 21.4316 10.2221 20.6884 10.6871 20.2426L16.4643 14.7387H2.68542C2.04778 14.7387 1.53479 14.2257 1.53479 13.5881V12.0539C1.53479 11.4162 2.04778 10.9033 2.68542 10.9033H16.4643L10.6871 5.39938C10.2173 4.95351 10.2077 4.2104 10.668 3.75494Z" fill="black"/>
+                    </svg>    
+                </button>
+
+                <button class="font-bold bg-white outline outline-slate-400 outline-1 py-5 px-3 flex justify-between items-center transition-transform duration-200 hover:scale-105 md:flex-1 md:gap-4">
+                    <svg 
+                        width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        class="hidden md:flex md:scale-90">
+                        <rect width="150" height="150" fill="url(#pattern0_1_95)"/>
+                        <defs>
+                        <pattern id="pattern0_1_95" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_1_95" transform="scale(0.00666667)"/>
+                        </pattern>
+                        <image id="image0_1_95" width="150" height="150" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                    </svg>
+                    <div>
+                        <p class="peer md:text-2xl">Baixe o app de parceiro</p>
+                        <span class="hidden md:flex">Leia o código QR para baixar o app</span>
+                    </div>
+                    <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.668 3.75494L11.7323 2.6906C12.183 2.23993 12.9117 2.23993 13.3576 2.6906L22.6777 12.0059C23.1284 12.4566 23.1284 13.1853 22.6777 13.6312L13.3576 22.9514C12.9069 23.402 12.1782 23.402 11.7323 22.9514L10.668 21.887C10.2125 21.4316 10.2221 20.6884 10.6871 20.2426L16.4643 14.7387H2.68542C2.04778 14.7387 1.53479 14.2257 1.53479 13.5881V12.0539C1.53479 11.4162 2.04778 10.9033 2.68542 10.9033H16.4643L10.6871 5.39938C10.2173 4.95351 10.2077 4.2104 10.668 3.75494Z" fill="black"/>
+                    </svg>    
+                </button>
+            </div>
+        </section>
+    </div>
+    <!-- FIM CTA BTN-->
+
+    <!-- CTA LINK-->
+     <div>  <!-- dv bg-->
+        <article class="h-80 md:h-fit md:flex md:justify-between md:w-4/5 md:mx-auto gap-7">
+            <button class="hidden md:flex md:justify-between items-center md:flex-1 py-8">
+                <p class="text-5xl font-bold text-left">Cadastre-se para dirigir</p>
+                <svg width="49" height="47" viewBox="0 0 49 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.7052 3.1289L23.0704 0.76378C24.0718 -0.237666 25.6912 -0.237666 26.682 0.76378L47.3927 21.4639C48.3942 22.4653 48.3942 24.0847 47.3927 25.0755L26.682 45.7863C25.6805 46.7877 24.0612 46.7877 23.0704 45.7863L20.7052 43.4211C19.6931 42.409 19.7145 40.7577 20.7479 39.7669L33.5856 27.5365H2.96686C1.54992 27.5365 0.409973 26.3966 0.409973 24.9796V21.5704C0.409973 20.1535 1.54992 19.0135 2.96686 19.0135H33.5856L20.7479 6.78311C19.7038 5.79232 19.6825 4.141 20.7052 3.1289Z" fill="black"/>
+                </svg>
+            </button>
+
+            <button class="hidden md:flex md:justify-between items-center md:flex-1 py-8">
+                <p class="text-5xl font-bold text-left">Cadastre-se para dirigir</p>
+                <svg width="49" height="47" viewBox="0 0 49 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.7052 3.1289L23.0704 0.76378C24.0718 -0.237666 25.6912 -0.237666 26.682 0.76378L47.3927 21.4639C48.3942 22.4653 48.3942 24.0847 47.3927 25.0755L26.682 45.7863C25.6805 46.7877 24.0612 46.7877 23.0704 45.7863L20.7052 43.4211C19.6931 42.409 19.7145 40.7577 20.7479 39.7669L33.5856 27.5365H2.96686C1.54992 27.5365 0.409973 26.3966 0.409973 24.9796V21.5704C0.409973 20.1535 1.54992 19.0135 2.96686 19.0135H33.5856L20.7479 6.78311C19.7038 5.79232 19.6825 4.141 20.7052 3.1289Z" fill="black"/>
+                </svg>
+            </button>
+        </div>
+    </article>
+    <!-- FIM CTA LINK-->
+
+    <!-- FOOTER-->
+     <div class="bg-black">  <!-- div bg -->
+        <footer class="text-white w-3/5 mx-auto py-10 flex flex-col justify-center items-center gap-5">
+            <img src="assets/uberlogo.png" alt="" class="w-[115px]">
+            <span class="text-sm tracking-wider">&#64;2024 Garras Devisticas</span>
+            <div class="flex gap-3">
+                <img src="assets/lojapple.png" alt="" class="w-[135px]">
+                <img src="assets/playstore.png" alt="" class="w-[135px]">
+            </div>
+        </footer>
+    </div>
+    <!-- FIM FOOTER-->
 </body>
 </html>
