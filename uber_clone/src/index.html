@@ -35,7 +35,7 @@
         </header>
     </div>
 
-    <div class="md:py-20 md:pl-[12.5%] md:bg-uber md:bg-cover md:bg-no-repeat md:bg-left"> <!--div bg-->
+    <div class="md:py-20 md:pl-[10%] md:bg-uber md:bg-cover md:bg-no-repeat md:bg-right"> <!--div bg-->
         <nav class="bg-slate-100 md:w-fit">  
             <div class="m-auto flex px-2 gap-6 items-center justify-center">
                 <a href="#" class="flex-1 flex flex-col items-center max-w-32 py-6 text-center border-b-2 border-black">
@@ -71,7 +71,7 @@
                 <section class="w-4/5 m-auto md:block py-10">
                     <h1 class="text-3xl md:text-5xl pb-6"><strong>Assuma o comando e ganhe</strong></h1>
                     <p class="pb-6">Diriga na plataforma com a maior rede de usuários ativos.</p>
-                    <button class="bg-black px-8 py-2 text-white rounded-md">
+                    <button class="bg-black transition duration-200 hover:bg-slate-800 px-8 py-2 text-white rounded-md">
                         Cadastre-se para dirigir</button>
                     <a href="#" class="pt-6 block underline underline-offset-4 decoration-slate-400">
                         Saiba mais sobre como dirigir e fazer entregas</a>
@@ -88,7 +88,7 @@
                 A plataforma Uber que você conhece, reinventada para empresas</h1>
             <p class="text-sm md:text-xl pb-6 md:max-w-[755px]">
                 Uma plataforma simples para empresas de todos os portes administrarem suas viagens e refeições globais e entregas locais.</p>
-            <button class="text-sm md:text-base py-2 px-8 bg-black text-white font-medium rounded-md">
+            <button class="text-sm md:text-base py-2 px-8 transition duration-200 hover:bg-slate-800 bg-black text-white font-medium rounded-md">
                 Começar</button>
         </section>
     </div>
@@ -114,7 +114,7 @@
     <!-- FIM POST -->
 
     <!-- CTA -->
-    <section class="flex flex-col gap-7 px-4 pb-8 md:px-0 md:w-4/5 md:mx-auto md:flex-row">  
+    <section class="flex flex-col gap-7 px-2 pb-8 md:px-0 md:w-4/5 md:mx-auto md:flex-row">  
         <article class="flex flex-col gap-5">
             <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_167)">
@@ -171,10 +171,9 @@
         <section class="py-6 px-3 md:px-0 md:w-4/5 md:mx-auto md:py-14">
             <h3 class="text-xl font-bold pb-4 md:text-5xl">É mais fácil pelo app</h3>
             <div class="flex flex-col gap-5 md:flex-row md">
-                <button class="font-bold bg-white outline outline-slate-400 outline-1 py-5 px-3 flex justify-between items-center transition-transform duration-200 hover:scale-105 md:flex-1 md:gap-4">
-                    <svg 
-                        width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        class="hidden md:flex md:scale-90">
+                <button class="font-bold bg-white outline outline-slate-400 outline-1 py-5 px-3 flex justify-between items-center md:flex-1 md:gap-4 group">
+                    <svg class="hidden md:flex md:scale-90"
+                        width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="150" height="150" fill="url(#pattern0_1_95)"/>
                         <defs>
                         <pattern id="pattern0_1_95" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -187,15 +186,15 @@
                         <p class="peer md:text-2xl">Baixe o app da Uber</p>
                         <span class="hidden md:flex">Leia o código QR para baixar o app</span>
                     </div>
-                    <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="transition-transform duration-200 group-hover:translate-x-2"
+                        width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.668 3.75494L11.7323 2.6906C12.183 2.23993 12.9117 2.23993 13.3576 2.6906L22.6777 12.0059C23.1284 12.4566 23.1284 13.1853 22.6777 13.6312L13.3576 22.9514C12.9069 23.402 12.1782 23.402 11.7323 22.9514L10.668 21.887C10.2125 21.4316 10.2221 20.6884 10.6871 20.2426L16.4643 14.7387H2.68542C2.04778 14.7387 1.53479 14.2257 1.53479 13.5881V12.0539C1.53479 11.4162 2.04778 10.9033 2.68542 10.9033H16.4643L10.6871 5.39938C10.2173 4.95351 10.2077 4.2104 10.668 3.75494Z" fill="black"/>
                     </svg>    
                 </button>
 
-                <button class="font-bold bg-white outline outline-slate-400 outline-1 py-5 px-3 flex justify-between items-center transition-transform duration-200 hover:scale-105 md:flex-1 md:gap-4">
-                    <svg 
-                        width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        class="hidden md:flex md:scale-90">
+                <button class="font-bold bg-white outline outline-slate-400 outline-1 py-5 px-3 flex justify-between items-center md:flex-1 md:gap-4 group">
+                    <svg class="hidden md:flex md:scale-90"
+                        width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="150" height="150" fill="url(#pattern0_1_95)"/>
                         <defs>
                         <pattern id="pattern0_1_95" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -208,7 +207,8 @@
                         <p class="peer md:text-2xl">Baixe o app de parceiro</p>
                         <span class="hidden md:flex">Leia o código QR para baixar o app</span>
                     </div>
-                    <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="transition-transform duration-200 group-hover:translate-x-2"
+                        width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.668 3.75494L11.7323 2.6906C12.183 2.23993 12.9117 2.23993 13.3576 2.6906L22.6777 12.0059C23.1284 12.4566 23.1284 13.1853 22.6777 13.6312L13.3576 22.9514C12.9069 23.402 12.1782 23.402 11.7323 22.9514L10.668 21.887C10.2125 21.4316 10.2221 20.6884 10.6871 20.2426L16.4643 14.7387H2.68542C2.04778 14.7387 1.53479 14.2257 1.53479 13.5881V12.0539C1.53479 11.4162 2.04778 10.9033 2.68542 10.9033H16.4643L10.6871 5.39938C10.2173 4.95351 10.2077 4.2104 10.668 3.75494Z" fill="black"/>
                     </svg>    
                 </button>
@@ -218,22 +218,22 @@
     <!-- FIM CTA BTN-->
 
     <!-- CTA LINK-->
-     <div>  <!-- dv bg-->
-        <article class="h-80 md:h-fit md:flex md:justify-between md:w-4/5 md:mx-auto gap-7">
-            <button class="hidden md:flex md:justify-between items-center md:flex-1 py-8">
-                <p class="text-5xl font-bold text-left">Cadastre-se para dirigir</p>
-                <svg width="49" height="47" viewBox="0 0 49 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20.7052 3.1289L23.0704 0.76378C24.0718 -0.237666 25.6912 -0.237666 26.682 0.76378L47.3927 21.4639C48.3942 22.4653 48.3942 24.0847 47.3927 25.0755L26.682 45.7863C25.6805 46.7877 24.0612 46.7877 23.0704 45.7863L20.7052 43.4211C19.6931 42.409 19.7145 40.7577 20.7479 39.7669L33.5856 27.5365H2.96686C1.54992 27.5365 0.409973 26.3966 0.409973 24.9796V21.5704C0.409973 20.1535 1.54992 19.0135 2.96686 19.0135H33.5856L20.7479 6.78311C19.7038 5.79232 19.6825 4.141 20.7052 3.1289Z" fill="black"/>
-                </svg>
-            </button>
+    <article class="h-80 md:h-fit md:flex md:justify-between md:w-4/5 md:mx-auto gap-7">
+        <button class="hidden md:flex md:justify-between items-center md:flex-1 py-8">
+            <p class="text-5xl font-bold text-left">Cadastre-se para dirigir</p>
+            <svg
+                width="49" height="47" viewBox="0 0 49 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.7052 3.1289L23.0704 0.76378C24.0718 -0.237666 25.6912 -0.237666 26.682 0.76378L47.3927 21.4639C48.3942 22.4653 48.3942 24.0847 47.3927 25.0755L26.682 45.7863C25.6805 46.7877 24.0612 46.7877 23.0704 45.7863L20.7052 43.4211C19.6931 42.409 19.7145 40.7577 20.7479 39.7669L33.5856 27.5365H2.96686C1.54992 27.5365 0.409973 26.3966 0.409973 24.9796V21.5704C0.409973 20.1535 1.54992 19.0135 2.96686 19.0135H33.5856L20.7479 6.78311C19.7038 5.79232 19.6825 4.141 20.7052 3.1289Z" fill="black"/>
+            </svg>
+        </button>
 
-            <button class="hidden md:flex md:justify-between items-center md:flex-1 py-8">
-                <p class="text-5xl font-bold text-left">Cadastre-se para dirigir</p>
-                <svg width="49" height="47" viewBox="0 0 49 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20.7052 3.1289L23.0704 0.76378C24.0718 -0.237666 25.6912 -0.237666 26.682 0.76378L47.3927 21.4639C48.3942 22.4653 48.3942 24.0847 47.3927 25.0755L26.682 45.7863C25.6805 46.7877 24.0612 46.7877 23.0704 45.7863L20.7052 43.4211C19.6931 42.409 19.7145 40.7577 20.7479 39.7669L33.5856 27.5365H2.96686C1.54992 27.5365 0.409973 26.3966 0.409973 24.9796V21.5704C0.409973 20.1535 1.54992 19.0135 2.96686 19.0135H33.5856L20.7479 6.78311C19.7038 5.79232 19.6825 4.141 20.7052 3.1289Z" fill="black"/>
-                </svg>
-            </button>
-        </div>
+        <button class="hidden md:flex md:justify-between items-center md:flex-1 py-8">
+            <p class="text-5xl font-bold text-left">Cadastre-se para dirigir</p>
+            <svg   
+                width="49" height="47" viewBox="0 0 49 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.7052 3.1289L23.0704 0.76378C24.0718 -0.237666 25.6912 -0.237666 26.682 0.76378L47.3927 21.4639C48.3942 22.4653 48.3942 24.0847 47.3927 25.0755L26.682 45.7863C25.6805 46.7877 24.0612 46.7877 23.0704 45.7863L20.7052 43.4211C19.6931 42.409 19.7145 40.7577 20.7479 39.7669L33.5856 27.5365H2.96686C1.54992 27.5365 0.409973 26.3966 0.409973 24.9796V21.5704C0.409973 20.1535 1.54992 19.0135 2.96686 19.0135H33.5856L20.7479 6.78311C19.7038 5.79232 19.6825 4.141 20.7052 3.1289Z" fill="black"/>
+            </svg>
+        </button>
     </article>
     <!-- FIM CTA LINK-->
 
@@ -242,7 +242,7 @@
         <footer class="text-white w-3/5 mx-auto py-10 flex flex-col justify-center items-center gap-5">
             <img src="assets/uberlogo.png" alt="" class="w-[115px]">
             <span class="text-sm tracking-wider">&#64;2024 Garras Devisticas</span>
-            <div class="flex gap-3">
+            <div class="flex flex-col md:flex-row gap-3">
                 <img src="assets/lojapple.png" alt="" class="w-[135px]">
                 <img src="assets/playstore.png" alt="" class="w-[135px]">
             </div>
