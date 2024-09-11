@@ -15,8 +15,8 @@
 <body class="min-h-screen font-inter"> 
 
     <!-- HEADER -->
-    <div class="bg-black py-5">  <!--div bg-->
-        <header class="m-auto w-4/5 flex justify-between md:max-w-[1200px]">
+    <header class="bg-black py-5">  <!--bg full-->
+        <div class="m-auto w-4/5 flex justify-between md:max-w-[1200px]">
             <div class="flex justify-center gap-6 items-center">
                 <img src="../src/assets/uberlogo.png" alt=""  width=71px height="25px">
                 <a href="#" class="hidden md:inline-block md:text-white">
@@ -32,11 +32,11 @@
                 <a href="#" class="transition duration-200 bg-white hover:bg-slate-200 p-2 rounded-[36px] font-medium">
                     Sign up</a>
             </div>
-        </header>
-    </div>
+        </div>
+    </header>
 
-    <div class="md:py-20 md:pl-[10%] md:bg-uber md:bg-cover md:bg-no-repeat md:bg-right"> <!--div bg-->
-        <nav class="bg-slate-100 md:w-fit">  
+    <nav class="md:py-20 md:pl-[10%] md:bg-uber md:bg-cover md:bg-no-repeat md:bg-right"> <!--div bg-->
+        <section class="bg-slate-100 md:w-fit">  
             <div class="m-auto flex px-2 gap-6 items-center justify-center">
                 <a href="#" class="flex-1 flex flex-col items-center max-w-32 py-6 text-center border-b-2 border-black">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,45 +77,47 @@
                         Saiba mais sobre como dirigir e fazer entregas</a>
                 </section>
             </div>
-        </nav>
-    </div>
+        </section>
+    </nav>
     <!-- FIM HEADER -->
 
     <!-- CTA -->
-    <div class="bg-city py-7 bg-cover bg-right-bottom box-content">  <!--div bg-->
-        <section class="w-4/5 max-w-[1200px] m-auto">
-            <h1 class="text-2xl md:text-5xl font-bold pb-5 box-content md:max-w-[880px]">
+    <section class="bg-city py-7 bg-cover bg-right-bottom box-content">  <!--div bg-->
+        <div class="w-4/5 max-w-[1200px] m-auto">
+            <h1 class="text-2xl md:text-5xl font-bold pb-5 box-content md:max-w-2xl">
                 A plataforma Uber que você conhece, reinventada para empresas</h1>
             <p class="text-sm md:text-xl pb-6 md:max-w-[755px]">
                 Uma plataforma simples para empresas de todos os portes administrarem suas viagens e refeições globais e entregas locais.</p>
             <button class="text-sm md:text-base py-2 px-8 transition duration-200 hover:bg-slate-800 bg-black text-white font-medium rounded-md">
                 Começar</button>
-        </section>
-    </div>
+        </div>
+    </section>
     <!--FIM CTA-->
 
     <!-- POST -->
-    <div class="pb-16 md:w-4/5 md:mx-auto">  <!-- div bg -->
+    <section class="pb-16 px-2 md:w-4/5 md:mx-auto md:max-w-[1200px] md:px-0">
         <h3 class="pt-9 pb-5 text-lg font-bold md:text-4xl md:max-w-3xl">
             Preocupados com a sua segurança, onde quer que você vá</h3>
         <section class="md:flex md:gap-5">
-            <article class="px-2 md:px-0 flex flex-col gap-4 md:flex-1">
-                <img src="../src/assets/post1.png" alt="imagem de transito">
-                <p class="font-medium text-xl md:text-2xl">Sua segurança é a nossa prioridade</p>
+            <a href="#" class="flex flex-col gap-4 md:flex-1 group">
+                <img class="md:opacity-90 duration-200 md:group-hover:scale-95 md:group-hover:opacity-100" 
+                    src="../src/assets/post1.png" alt="imagem de transito">
+                <h3 class="font-medium text-xl md:text-2xl">Sua segurança é a nossa prioridade</h3>
                 <p class="pb-5 text-sm md:text-base">Com todos os recursos de segurança e todas as normas do nosso Código da Comunidade Uber, estamos comprometidos em ajudar a criar um ambiente seguro para nossos usuários.</p>
-            </article>
-            <article class="px-2 md:px-0 flex flex-col gap-4 md:flex-1">
-                <img src="../src/assets/post2.png" alt="imagem de motorista uber">
-                <p class="font-medium text-xl md:text-2xl">Colocamos mais de 10.000 cidades em movimento</p>
+            </a>
+            <a href="#" class="flex flex-col gap-4 md:flex-1 group">
+                <img class="md:opacity-90 duration-200 md:group-hover:scale-95 md:group-hover:opacity-100" 
+                    src="../src/assets/post2.png" alt="imagem de motorista uber">
+                <h3 class="font-medium text-xl md:text-2xl">Colocamos mais de 10.000 cidades em movimento</h3>
                 <p class="text-sm md:text-base">O app está disponível em milhares de cidades no mundo todo para que você possa solicitar uma viagem mesmo longe de casa.</p>
-            </article>
+            </a>
         </section>
-    </div>
+    </section>
     <!-- FIM POST -->
 
     <!-- CTA -->
-    <section class="flex flex-col gap-7 px-2 pb-8 md:px-0 md:w-4/5 md:mx-auto md:flex-row">  
-        <article class="flex flex-col gap-5">
+    <section class="flex flex-col gap-7 px-2 pb-8 md:px-0 md:w-4/5 md:mx-auto md:flex-row md:max-w-[1200px]">  
+        <article class="flex flex-col gap-5 ">
             <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_167)">
                 <path d="M5.4533 16.3597C7.45852 16.3597 9.08883 14.7293 9.08883 12.7241C9.08883 10.7189 7.45852 9.08859 5.4533 9.08859C3.44807 9.08859 1.81777 10.7189 1.81777 12.7241C1.81777 14.7293 3.44807 16.3597 5.4533 16.3597ZM30.902 16.3597C32.9072 16.3597 34.5375 14.7293 34.5375 12.7241C34.5375 10.7189 32.9072 9.08859 30.902 9.08859C28.8968 9.08859 27.2665 10.7189 27.2665 12.7241C27.2665 14.7293 28.8968 16.3597 30.902 16.3597ZM32.7198 18.1774H29.0842C28.0845 18.1774 27.1813 18.5807 26.5223 19.234C28.8116 20.4894 30.4362 22.7559 30.7884 25.4485H34.5375C35.543 25.4485 36.3553 24.6362 36.3553 23.6307V21.813C36.3553 19.8077 34.725 18.1774 32.7198 18.1774ZM18.1777 18.1774C21.6939 18.1774 24.5398 15.3315 24.5398 11.8152C24.5398 8.299 21.6939 5.45306 18.1777 5.45306C14.6614 5.45306 11.8155 8.299 11.8155 11.8152C11.8155 15.3315 14.6614 18.1774 18.1777 18.1774ZM22.5403 19.9952H22.0688C20.8873 20.5632 19.5751 20.9041 18.1777 20.9041C16.7802 20.9041 15.4737 20.5632 14.2865 19.9952H13.815C10.2022 19.9952 7.27106 22.9263 7.27106 26.5391V28.1751C7.27106 29.6805 8.49237 30.9018 9.99771 30.9018H26.3576C27.8629 30.9018 29.0842 29.6805 29.0842 28.1751V26.5391C29.0842 22.9263 26.1531 19.9952 22.5403 19.9952ZM9.83298 19.234C9.17404 18.5807 8.27083 18.1774 7.27106 18.1774H3.63553C1.63031 18.1774 0 19.8077 0 21.813V23.6307C0 24.6362 0.812314 25.4485 1.81777 25.4485H5.56123C5.9191 22.7559 7.54373 20.4894 9.83298 19.234Z" fill="black"/>
@@ -127,7 +129,7 @@
                 </defs>
             </svg>
             <h3 class="text-xl">Quem somos</h3>
-            <p>Find out how we started, what drives us, and how we’re reimagining how the world moves.</p>
+            <p>Find out how we started, what drives us, and how we're reimagining how the world moves.</p>
             <a href="#" class="block underline underline-offset-4 decoration-slate-400">
                 Saiba mais sobre a Uber</a>
         </article>
@@ -167,8 +169,8 @@
     <!-- FIM CTA -->
 
     <!-- CTA BTN-->
-    <div class="bg-slate-200">  <!-- div bg-->
-        <section class="py-6 px-3 md:px-0 md:w-4/5 md:mx-auto md:py-14">
+    <section class="bg-slate-200">  <!-- bg full -->
+        <div class="py-6 px-3 md:px-0 md:w-4/5 md:mx-auto md:py-14 md:max-w-[1200px]">
             <h3 class="text-xl font-bold pb-4 md:text-5xl">É mais fácil pelo app</h3>
             <div class="flex flex-col gap-5 md:flex-row md">
                 <button class="font-bold bg-white outline outline-slate-400 outline-1 py-5 px-3 flex justify-between items-center md:flex-1 md:gap-4 group">
@@ -213,12 +215,12 @@
                     </svg>    
                 </button>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
     <!-- FIM CTA BTN-->
 
     <!-- CTA LINK-->
-    <article class="h-80 md:h-fit md:flex md:justify-between md:w-4/5 md:mx-auto gap-7">
+    <section class="h-80 md:h-fit md:flex md:justify-between md:w-4/5 md:mx-auto md:max-w-[1200px] gap-7">
         <button class="hidden md:flex md:justify-between items-center md:flex-1 py-8">
             <p class="text-5xl font-bold text-left">Cadastre-se para dirigir</p>
             <svg
@@ -234,20 +236,24 @@
                 <path d="M20.7052 3.1289L23.0704 0.76378C24.0718 -0.237666 25.6912 -0.237666 26.682 0.76378L47.3927 21.4639C48.3942 22.4653 48.3942 24.0847 47.3927 25.0755L26.682 45.7863C25.6805 46.7877 24.0612 46.7877 23.0704 45.7863L20.7052 43.4211C19.6931 42.409 19.7145 40.7577 20.7479 39.7669L33.5856 27.5365H2.96686C1.54992 27.5365 0.409973 26.3966 0.409973 24.9796V21.5704C0.409973 20.1535 1.54992 19.0135 2.96686 19.0135H33.5856L20.7479 6.78311C19.7038 5.79232 19.6825 4.141 20.7052 3.1289Z" fill="black"/>
             </svg>
         </button>
-    </article>
+    </section>
     <!-- FIM CTA LINK-->
 
     <!-- FOOTER-->
-     <div class="bg-black">  <!-- div bg -->
-        <footer class="text-white w-3/5 mx-auto py-10 flex flex-col justify-center items-center gap-5">
+     <footer class="bg-black">  <!-- div bg -->
+        <div class="text-white w-3/5 mx-auto py-10 flex flex-col justify-center items-center gap-5 md:max-w-[1200px]">
             <img src="assets/uberlogo.png" alt="" class="w-[115px]">
-            <span class="text-sm tracking-wider">&#64;2024 Garras Devisticas</span>
+            <span class="text-sm tracking-wider text-slate-300">&#64;2024 Garras Devisticas</span>
             <div class="flex flex-col md:flex-row gap-3">
-                <img src="assets/lojapple.png" alt="" class="w-[135px]">
-                <img src="assets/playstore.png" alt="" class="w-[135px]">
+                <a href="#">
+                    <img src="assets/lojapple.png" alt="" class="w-28 md:w-36 h-full">
+                </a>
+                <a href="#">
+                    <img src="assets/playstore.png" alt="" class="w-28 md:w-36 h-full">
+                </a>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
     <!-- FIM FOOTER-->
 </body>
 </html>
