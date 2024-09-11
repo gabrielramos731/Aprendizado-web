@@ -6,7 +6,29 @@
     <link rel="stylesheet" href="../styles/output.css">
     <title>Lançamento Nike</title>
 </head>
-<body>
-    
+
+<body class="size-full">
+    <div class="h-screen w-full px-3 flex items-center justify-center bg-slate-300">
+        <main class="w-full max-w-4xl h-[580px] shadow-lg bg-white flex flex-col items-center justify-center md:flex-row">
+            <div class="h-full w-full flex items-center justify-center md:flex-1">  <!-- lado esquerdo -->
+                <div>
+                    <h1 class="font-bold text-5xl select-none mb-2">
+                        Lançamento <br>
+                        <span>Nike Air.</span>
+                    </h1>
+                    <p class="text-lg mb-1">O tênis do futuro.</p>
+                    <p class="text-lg mb-5">O futuro a um passo do seu alcance!</p>
+                    <a href="#" 
+                        class="bg-zinc-800 text-white px-5 py-3 text-lg font-bold uppercase border-2 border-zinc-800 duration-200 hover:bg-white hover:text-zinc-800 ">
+                        Quero conhecer!</a>
+                </div>
+            </div>
+
+            <div class="mt-6 bg-tenis bg-no-repeat bg-center bg-cover w-full h-full flex justify-center items-center md:flex-1 md:mt-0">  <!-- lado direito -->
+                <img class="max-w-lg w-11/12 duration-200 hover:scale-110 hover:rotate-3" 
+                    src="assets/tenis.png" alt="tenis nike">
+            </div>
+        </main>
+    </div>
 </body>
 </html>
