@@ -1,12 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-screen">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-    
+
+<body class="w-full h-full">
+    <div class="font-inter w-4/5 min-w-80 max-w-5xl mx-auto">
+
+        <!-- INICIO HEADER -->
+        <header>
+            <div class="py-10 flex justify-between items-center">
+                <img src="../src/assets/imagens/SER-DIGITAL.svg" alt="" width="122px" height="24px">
+                <ul class="hidden sm:flex sm:gap-5 *:p-1 text-zinc-800">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Sobre</li></a>
+                    <a href="#"><li>Testemunhas</li></a>
+                    <a href="#"><li>Contato</li></a>
+                </ul>
+                <svg class="sm:hidden" 
+                    width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="4" width="20" height="1.05" fill="#272D38"/>
+                    <rect x="2" y="11.2727" width="20" height="1.05" fill="#272D38"/>
+                    <rect x="2" y="18.5454" width="20" height="1.05" fill="#272D38"/>
+                </svg>
+            </div>
+        </header>
+        <!-- FIM HEADER -->
+
+        <!-- INICIO HERO -->
+        <section class="my-16 flex flex-col justify-center items-center max-w-md mx-auto sm:ml-0 sm:max-w-full md:flex-row">
+            <div class="flex-1 flex flex-col justify-center items-center gap-6 sm:items-start">
+                <h1 class="text-center font-bold text-[40px] sm:text-start sm:text-5xl">Produtos, Marcas & Experiências Digitais</h1>
+                <p class="text-center sm:text-lg sm:text-start">Somos um time 100% digital construindo produtos 100% digitais</p>
+                <a href="#" class="text-white bg-indigo-400 rounded-lg py-2 px-6 transition hover:bg-indigo-300 hover:text-slate-">ENTRE EM CONTATO</a>
+            </div>
+            <div class="mt-10 flex-1 md:flex md:justify-end">
+                <img class="w-full max-w-[360px]" src="../src/assets/imagens/online-business-marketing.png" alt="" >
+            </div>
+        </section>
+        <!-- FIM HERO -->
+
+        <!-- INICIO CTA -->
+        <section class="mt-16">
+            <div class="flex flex-col gap-5">
+                <p class="text-center text-zinc-700">Algumas empresas que confiam em nossos serviços</p>
+                <article class="px-4 py-7 flex *:flex-1 items-center gap-4 bg-slate-100 rounded-lg">
+                    <div>
+                        <img src="../src/assets/imagens/spotify.svg" alt="">
+                    </div>
+                    <div>
+                        <img src="../src/assets/imagens/slack.svg" alt="">
+                    </div>
+                    <div>
+                        <img src="../src/assets/imagens/dropbox.svg" alt="">
+                    </div>
+                    <div>
+                        <img src="../src/assets/imagens/zoom.svg" alt="">
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- FIM CTA -->
+
+        <!-- INICIO POSTS -->
+        <section class="mt-20">
+            <div class="flex flex-col gap-28">
+                <article class="flex flex-col gap-10 text-center justify-center items-center sm:flex-row sm:gap-4">
+                    <div class=" flex flex-col items-center gap-6 sm:mb-0 sm:text-start sm:order-2">
+                        <h2 class="text-3xl font-bold">Branding & Design system</h2>
+                        <p class="text-sm text-zinc-700">Normalmente usado em indústrias gráficas e produtoras para pré-visualização de designs, layouts e mockups</p>
+                        <div>
+                            <a href="#" class="p-2 block group">
+                                <img class="transition duration-200 group-hover:translate-x-2" src="../src/assets/imagens/Arrow.svg" alt="right arrow">
+                            </a>
+                        </div>     
+                    </div>
+                    <div class="sm:order-1">
+                        <img class="max-w-56" src="../src/assets/imagens/business-deal.png" alt="">
+                    </div>
+                </article>
+
+                <article class="flex flex-col gap-10 text-center justify-center items-center sm:flex-row sm:gap-4">
+                    <div class=" flex flex-col items-center gap-6 sm:mb-0 sm:text-start">
+                        <h2 class="text-3xl font-bold">Branding & Design system</h2>
+                        <p class="text-sm text-zinc-700">Normalmente usado em indústrias gráficas e produtoras para pré-visualização de designs, layouts e mockups</p>
+                        <div>
+                            <a href="#" class="p-2 block group">
+                                <img class="transition duration-200 group-hover:translate-x-2" src="../src/assets/imagens/Arrow.svg" alt="right arrow">
+                            </a>
+                        </div>          
+                    </div>
+                    <div>
+                        <img class="max-w-56" src="../src/assets/imagens/businessman-checking-financial-report.png" alt="">
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- FIM POSTS -->
+
+    </div>
 </body>
 </html>
