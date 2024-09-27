@@ -13,7 +13,9 @@
     <title>Document</title>
   </head>
 
-  <body class="min-h-screen w-full">
+  <body
+    class="min-h-screen w-full bg-[radial-gradient(circle_at_left_top,rgb(142,173,213,.3),transparent_600px),radial-gradient(circle_at_right_center,rgb(142,173,213,.3),transparent_600px)]"
+  >
     <div class="mx-auto w-4/5 min-w-80 max-w-5xl p-2 font-inter">
       <!-- INICIO HEADER -->
       <header>
@@ -30,18 +32,21 @@
             <a href="#"><li>Testemunhas</li></a>
             <a href="#"><li>Contato</li></a>
           </ul>
-          <svg
-            class="sm:hidden"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect x="2" y="4" width="20" height="1.05" fill="#272D38" />
-            <rect x="2" y="11.2727" width="20" height="1.05" fill="#272D38" />
-            <rect x="2" y="18.5454" width="20" height="1.05" fill="#272D38" />
-          </svg>
+          <label for="button">
+            <svg
+              id="button"
+              class="sm:hidden"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="2" y="4" width="20" height="1.05" fill="#272D38" />
+              <rect x="2" y="11.2727" width="20" height="1.05" fill="#272D38" />
+              <rect x="2" y="18.5454" width="20" height="1.05" fill="#272D38" />
+            </svg>
+          </label>
         </div>
       </header>
       <!-- FIM HEADER -->
@@ -272,13 +277,16 @@
     </div>
     <!-- INICIO FOOTER -->
     <footer class="mt-40 w-full bg-slate-100">
-      <div class="mx-auto w-4/5 py-10 flex flex-col gap-14 sm:flex-row sm:justify-around sm:items-center">
+      <div
+        class="mx-auto flex w-4/5 flex-col gap-14 py-10 sm:flex-row sm:items-center sm:justify-around"
+      >
         <section class="flex flex-col items-center gap-8">
           <h3 class="text-base font-bold uppercase">ser digital</h3>
           <p class="max-w-48 text-center text-sm sm:text-base">
             Building digital products, brands & experience
           </p>
           <div class="flex gap-10">
+            <a href="#">
             <svg
               width="38"
               height="36"
@@ -291,6 +299,8 @@
                 fill="#272D38"
               />
             </svg>
+            </a>
+            <a href="#">
             <svg
               width="39"
               height="36"
@@ -303,6 +313,8 @@
                 fill="#272D38"
               />
             </svg>
+            </a>
+            <a href="#">
             <svg
               width="39"
               height="36"
@@ -327,6 +339,8 @@
                 </clipPath>
               </defs>
             </svg>
+            </a>
+            <a href="#">
             <svg
               width="38"
               height="36"
@@ -351,20 +365,21 @@
                 </clipPath>
               </defs>
             </svg>
-          </div>  
+            </a>
+          </div>
         </section>
 
         <section class="flex flex-col items-center">
           <h3 class="font-bold">Company</h3>
-          <ul class="text-center *:block *:my-1 *:p-1">
+          <ul class="text-center *:my-1 *:block *:p-1">
             <a href="#"><li>Sobre Nós</li></a>
             <a href="#"><li>Carreira</li></a>
             <a href="#"><li>Parceiros</li></a>
             <a href="#"><li>Contato</li></a>
           </ul>
         </section>
-        
-        <section class="flex flex-col text-center">
+
+        <section class="flex flex-col text-center *:my-1">
           <h3 class="font-bold">Contato</h3>
           <span>contato@dev.com</span>
           <span>(38) 12345-6789</span>
